@@ -19,3 +19,16 @@ class InstitutionView(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status.HTTP_201_CREATED)
+
+class ContacPersonView(APIView):
+    def get(self, request):
+        persons = ContactPerson.objects.all()
+        print(persons)
+        serializer = InstitutionSerializer(persons, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = ContactPersonSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status.HTTP_201_CREATED)
