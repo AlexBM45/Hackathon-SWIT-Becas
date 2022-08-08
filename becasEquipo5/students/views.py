@@ -36,7 +36,7 @@ class StudentSingleView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def patch(self, request, id):
-        student = student.objects.get(id=id)
+        student = Student.objects.get(id=id)
         if student is None:
             return Response({'error': 'Bad Request'}, status=status.HTTP_400_BAD_REQUEST)
         serializer = StudentSerializer(student, data=request.data, partial=True)
@@ -44,6 +44,8 @@ class StudentSingleView(APIView):
         serializer.save()
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    
 
     def delete(self, request, id):
         student = Student.objects.get(id=id)

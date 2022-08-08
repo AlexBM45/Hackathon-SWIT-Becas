@@ -31,7 +31,7 @@ class InstitutionSingleView(APIView):
         institution = Institution.objects.filter(id=id).first()
         if institution is None:
             return Response({'error': 'Bad Request'}, status=status.HTTP_400_BAD_REQUEST)
-        serializer = InstitutionContactSerializer(institution)
+        serializer = InstitutionSerializer(institution)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
