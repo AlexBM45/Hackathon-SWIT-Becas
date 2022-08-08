@@ -140,10 +140,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import dj_database_url  
 db_from_env = dj_database_url.config(conn_max_age=500)  
 DATABASES['default'].update(db_from_env)
-
-from django.core.wsgi import get_wsgi_application  
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "miSitio.settings")  
-application = get_wsgi_application()  
-
-from whitenoise.django import DjangoWhiteNoise  
-application = DjangoWhiteNoise(application)
