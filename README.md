@@ -11,3 +11,21 @@ Instituciones y organizaciones internacionales becan a estudiantes para que pued
    - Python 3.10
    - Django 4.1
    - Django RestFramework 3.13.1
+
+-------
+## Deploy: https://becas-equipo5.herokuapp.com/
+
+-------
+## Content
+[Base de Datos](https://drive.google.com/file/d/1baKjCddjz4BNUK5rYRKrP_5laJpqJOxH/view?usp=sharing)
+<picture>
+   <img alt="Base de datos" src="./img/bd-becas.jpg">
+</picture>
+
+[Historias de usuario](./img/historias.md)
+
+-------
+## Team
+   - [Gabriela Hilario](https://github.com/gaby-hack215)
+   - [Rocio Xicohténcatl Reza](https://github.com/rocioxire)
+   - [Alejandra Benítez](https://github.com/AlexBM45)
