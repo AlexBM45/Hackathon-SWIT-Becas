@@ -14,7 +14,7 @@ class Requirement(models.Model):
         db_table = 'requirements'
     
     def __str__(self):
-        return self.name
+        return self.education_level
 
 class Scholarship(models.Model):
     name = models.CharField(max_length=120, verbose_name='Nombre Beca')

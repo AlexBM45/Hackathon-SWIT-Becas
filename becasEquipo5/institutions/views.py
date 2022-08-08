@@ -85,7 +85,7 @@ class ContactSingleView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def delete(self, request, id):
-        institution = get_object_or_404(ContactPerson, id=id)
-        institution.delete()
+        contact = get_object_or_404(ContactPerson, id=id)
+        contact.delete()
 
         return Response('Contacto eliminado', status=status.HTTP_204_NO_CONTENT)
