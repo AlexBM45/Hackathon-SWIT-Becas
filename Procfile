@@ -1,1 +1,1 @@
-web gunicorn becasEquipo5.wsgi
+web gunicorn becasEquipo5.wsgi --log-file -
