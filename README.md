@@ -26,6 +26,6 @@ Instituciones y organizaciones internacionales becan a estudiantes para que pued
 
 -------
 ## Team
-   - [Gabriela Hilario](https://github.com/gaby-hack215)
-   - [Rocio Xicohténcatl Reza](https://github.com/rocioxire)
-   - [Alejandra Benítez](https://github.com/AlexBM45)
+   * [Gabriela Hilario](https://github.com/gaby-hack215)
+   * [Rocio Xicohténcatl Reza](https://github.com/rocioxire)
+   * [Alejandra Benítez](https://github.com/AlexBM45)
