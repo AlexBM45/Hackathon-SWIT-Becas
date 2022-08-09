@@ -9,4 +9,4 @@ urlpatterns = [
     path('institutions/', include('institutions.urls')),
     path('students/', include('students.urls')),
     path('scholarships/', include('scholarships.urls'))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
