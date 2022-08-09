@@ -1,0 +1,1 @@
+web: gunicorn becasEquipo5.wsgi --log-file -
